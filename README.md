@@ -18,7 +18,7 @@ configuration release. Set `TINFOIL_API_KEY` to your Tinfoil admin API key:
 
 ```sh
 tinfoil container create my-sandbox \
-  --repo tinfoilsh/confidential-ubuntu-config \
+  --repo jdrean/confidential-ubuntu-config \
   --tag <release-tag> \
   --host <host> \
   --volume <disk-name>:workspace
@@ -30,7 +30,7 @@ attested host-key profile:
 
 ```sh
 tinfoil attest-ssh my-sandbox \
-  --repo tinfoilsh/confidential-ubuntu-config@<release-tag> \
+  --repo jdrean/confidential-ubuntu-config@<release-tag> \
   --identity <bootstrap-private-key-file> \
   --install
 ssh my-sandbox workspace-unlock < workspace.key
