@@ -21,7 +21,7 @@ volumes:
 
 containers:
   - name: "workspace"
-    image: "ghcr.io/tinfoilsh/confidential-ubuntu-private@sha256:226300bc2a60c1b6642753e4a7be6d5e90a45a6292d5adc7685cfc62f6608f46"
+    image: "ghcr.io/jdrean/confidential-ubuntu-private@sha256:aa8f36205fb6105405ea226f80cad4b3291956e8ab50e2539555c4778f3d2c05"
     restart: on-failure
     cvm_admin: true
     stop_signal: SIGRTMIN+3
